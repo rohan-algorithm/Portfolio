@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@mediapipe/tasks-vision": "^0.10.12",
     "@react-three/drei": "^9.105.1",
     "@react-three/fiber": "^8.16.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "GENERATE_SOURCEMAP=false react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

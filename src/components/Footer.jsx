@@ -5,8 +5,7 @@ import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import axios from 'axios';
-
+import axios from 'axios'
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -15,19 +14,17 @@ const Contact = () => {
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
+  const loading =false;
 
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
-   
+
     setForm({
       ...form,
       [name]: value,
     });
   };
-
-
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // prevent form submission
@@ -49,9 +46,6 @@ const Contact = () => {
       alert('Oops... ' + JSON.stringify(error));
     }
   };
-  
-
-
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
