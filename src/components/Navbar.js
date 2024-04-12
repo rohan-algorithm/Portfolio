@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../style.js";
 import { navLinks } from "../constants/index.js";
-import logo1 from "../assets/logo.jsx";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 

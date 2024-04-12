@@ -1,7 +1,5 @@
-import { motion } from "framer-motion";
 
 import { styles } from "../style";
-import im from "../assets/rr.png"
 
 const Hero = () => {
   return (
